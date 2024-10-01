@@ -1,5 +1,12 @@
 let char = new Sorcerer("Pedro");
 
-console.log(char.name);
-console.log(char.attack);
-console.log(char.life);
+let monster = new LittleMonster()
+
+const stage = new Stage(
+    char,
+    monster,
+    document.querySelector("#char"),
+    document.querySelector("#monster")
+)
+
+stage.start()
